@@ -208,6 +208,7 @@ img {
 
 .map {
   filter: grayscale(1);
+  width: 100%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -237,5 +238,30 @@ img {
   }
   .copyright {
     margin: 5px 0 10px;
+  }
+  .about-text {
+    margin: 10px 0 450px;
+  }
+  .about-text P {
+    font-size: 0.84rem;
+    line-height: 30px;
+  }
+  .company dl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .company dl dt {
+    width: 100%;
+    border-bottom: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .company dl dd {
+    width: 95%;
+    padding: 15px 0;
+  }
+  .map {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
