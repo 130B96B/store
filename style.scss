@@ -183,9 +183,6 @@ img{
 .company{
   width: 43%;
   font-size: 0.85rem;
-  & P{
-    margin-bottom: 30px;
-  }
   & dl{
     display: flex;
     flex-wrap: wrap;
@@ -209,6 +206,6 @@ img{
     }
 }
 
-.map {
-  filter: grayscale(2);
+.map{
+  filter: grayscale(1);
 }
