@@ -208,4 +208,34 @@ img {
 
 .map {
   filter: grayscale(1);
+}
+
+@media only screen and (max-width: 900px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .item-image {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .item-text {
+    width: 103%;
+    font-size: 0.9rem;
+  }
+  .back {
+    margin-bottom: 100px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .copyright {
+    margin: 5px 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
