@@ -208,7 +208,11 @@ img{
 
 .map{
   filter: grayscale(1);
-  width: 100%
+  & iframe{
+    width: 600px;
+    height: 300px;
+    margin: 30px 0 60px;
+  }
 }
 
 @media only screen and (max-width: 900px){
@@ -250,7 +254,6 @@ img{
     & dl{
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
       & dt{
         width: 100%;
         border-bottom: none;
@@ -264,6 +267,9 @@ img{
       }
   }
   .map{
-    width: 90%;
+    & iframe{
+      width: 580px;
+      height: 280px;
+    }
   }
 }
