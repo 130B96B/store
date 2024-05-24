@@ -1,0 +1,214 @@
+li {
+  list-style: none;
+}
+
+a, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.logo img {
+  line-height: 1px;
+  width: 180px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 2px;
+  display: block;
+  background-color: #000;
+  position: relative;
+  transition: ease 0.4s;
+  cursor: pointer;
+}
+.hamburger span:first-child {
+  margin-top: 20px;
+}
+.hamburger span:last-child {
+  margin-top: 5px;
+}
+.hamburger.active span {
+  background-color: white;
+  z-index: 2;
+}
+.hamburger.active span:first-child {
+  top: 5px;
+  transform: rotate(45deg);
+}
+.hamburger.active span:last-child {
+  top: -3px;
+  transform: rotate(-45deg);
+}
+
+.slide-menu {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slide-menu ul {
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.slide-menu.active {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  z-index: 1;
+}
+.slide-menu.active ul {
+  transform: translateX(0);
+  margin: 45px 0 0 50px;
+  color: white;
+  font-size: 0.9rem;
+}
+.slide-menu.active ul li {
+  margin-bottom: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 35px;
+}
+.product-list img {
+  margin-bottom: 10px;
+}
+.product-list p {
+  font-size: 0.75rem;
+}
+
+.link-text {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 10px;
+}
+
+.footer-menu {
+  display: flex;
+}
+.footer-menu li {
+  font-size: 0.7rem;
+  margin-right: 30px;
+}
+
+.copyright {
+  font-size: 0.6rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin: 40px 0 25px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.pagination li {
+  font-size: 0.9rem;
+  margin: 20px;
+}
+
+.item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.item-image {
+  width: 50%;
+}
+
+.item-text {
+  width: 43%;
+  font-size: 0.85rem;
+}
+.item-text P {
+  margin-bottom: 30px;
+}
+.item-text dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-text dl dt {
+  width: 30%;
+}
+.item-text dl dd {
+  width: 70%;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  font-size: 0.85rem;
+}
+
+.about-text {
+  margin: 10px 0 450px;
+}
+.about-text P {
+  font-size: 0.9rem;
+  margin: 10px 0 30px;
+  line-height: 25px;
+}
+
+.company {
+  width: 43%;
+  font-size: 0.85rem;
+}
+.company P {
+  margin-bottom: 30px;
+}
+.company dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.company dl dt {
+  width: 30%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 0;
+}
+.company dl dt:last-of-type {
+  border-bottom: none;
+}
+.company dl dd {
+  width: 70%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 0;
+}
+.company dl dd:last-of-type {
+  border-bottom: none;
+}
+
+.map {
+  filter: grayscale(2);
+}/*# sourceMappingURL=style.css.map */
