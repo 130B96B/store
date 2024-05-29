@@ -42,18 +42,25 @@ img {
 }
 
 .btn {
-  position: relative;
   max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.hamburger {
+  position: fixed;
+  z-index: 10;
+  padding-top: 30px;
+  padding-right: 40px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
 .hamburger span {
   width: 28px;
   height: 2px;
   display: block;
   background-color: #000;
-  position: relative;
-  transition: ease 0.4s;
-  cursor: pointer;
 }
 .hamburger span:first-child {
   margin-top: 10px;
@@ -61,15 +68,15 @@ img {
 .hamburger span:last-child {
   margin-top: 5px;
 }
-.hamburger.active span {
-  z-index: 10;
+.hamburger.active {
+  padding-top: 40px;
 }
 .hamburger.active span:first-child {
-  top: 5px;
+  margin-top: 0;
   transform: rotate(45deg);
 }
 .hamburger.active span:last-child {
-  top: -3px;
+  margin-top: 0;
   transform: rotate(-45deg);
 }
 

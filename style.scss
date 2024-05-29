@@ -37,18 +37,23 @@ img{
   width: 180px;
 }
 .btn{
-  position: relative;
   max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 .hamburger{
+  position: fixed;
+  z-index: 10;
+  padding-top: 30px;
+  padding-right: 40px;
+  cursor: pointer;
+  transition:all ease 0.4s;
   & span{
   width: 28px;
   height: 2px;
   display: block;
   background-color: #000;
-  position: relative;
-  transition: ease .4s;
-  cursor: pointer;
   &:first-child{
     margin-top:  10px;
    }
@@ -57,14 +62,14 @@ img{
    }
   }
   &.active{
+    padding-top: 40px;
     & span{
-      z-index: 10;
       &:first-child{
-        top: 5px;
+        margin-top: 0;
         transform: rotate(45deg);
       }
       &:last-child{
-        top: -3px;
+        margin-top: 0;
         transform: rotate(-45deg);
       }
     }
