@@ -71,6 +71,9 @@ img {
 .hamburger.active {
   padding-top: 40px;
 }
+.hamburger.active span {
+  background-color: white;
+}
 .hamburger.active span:first-child {
   margin-top: 0;
   transform: rotate(45deg);

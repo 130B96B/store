@@ -64,6 +64,7 @@ img{
   &.active{
     padding-top: 40px;
     & span{
+      background-color: white;
       &:first-child{
         margin-top: 0;
         transform: rotate(45deg);
