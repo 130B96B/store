@@ -48,7 +48,7 @@ img{
   padding-top: 30px;
   padding-right: 40px;
   cursor: pointer;
-  transition:all ease 0.4s;
+  transition:all ease 0.2s;
   & span{
   width: 28px;
   height: 2px;
@@ -66,10 +66,14 @@ img{
     & span{
       background-color: white;
       &:first-child{
+        position: absolute;
+        right: 40px;
         margin-top: 0;
         transform: rotate(45deg);
       }
       &:last-child{
+        position: absolute;
+        right: 40px;
         margin-top: 0;
         transform: rotate(-45deg);
       }
